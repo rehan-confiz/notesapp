@@ -7,7 +7,7 @@ An iOS app to allow the user to save the important notes in the local storage of
 
 # Preview
 
-<img   src="/1.png" width="220"/>   <img   src="/2.png" width="220"/>   <img  src="/3.png" width="220"/> <img  src="/4.png" width="220"/>
+<img   src="/1.png" width="200"/>   <img   src="/2.png" width="200"/>   <img  src="/3.png" width="200"/> <img  src="/4.png" width="200"/>
 
 
 License
