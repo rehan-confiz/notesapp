@@ -37,6 +37,14 @@ class NewNoteViewController: UIViewController,UITextFieldDelegate,UITextViewDele
         textView.checkPlaceholder()
     }
     
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
           // Try to find next responder
           if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
@@ -49,6 +57,7 @@ class NewNoteViewController: UIViewController,UITextFieldDelegate,UITextViewDele
           return false
        }
    
+    
     @objc func saveNote(){
         if let noteTitleValue = noteTitle.text{
             if noteTitleValue.count == 0 {
